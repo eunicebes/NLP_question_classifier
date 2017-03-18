@@ -2,16 +2,19 @@ import plotly.graph_objs as go
 import plotly.offline as po
 from plotly.graph_objs import *
 
-def generate_bar_chart(frequency_token, number_of_word, title=None):
+def generate_bar_chart(input_list, chart_title):
+    x_axis = []
+    y_axis = []
+    for item in input_list:
+        x_axis.append(item[0])
+        y_axis.append(item[1])
+    data = [go.Bar(
+                x = x_axis,
+                y = y_axis
+        )]
 
-    token = ["Value: " + str(token_distri[0]) if isinstance(token_distri[0], int) else token_distri[0] for token_distri in frequency_token]
-    frequency = [token_distri[1] for token_distri in frequency_token]
-    distribution = [go.Bar(
-            x=token[:number_of_word],
-            y=frequency[:number_of_word]
-    )]
     layout = go.Layout(
-        title=title
+        title = chart_title,
     )
-    fig = go.Figure(data=distribution, layout=layout)
-    po.iplot(fig)
+    fig = go.Figure(data=data, layout=layout)
+    po.iplot(fig, filename='basic-bar')
