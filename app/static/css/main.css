@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+html, body{
+	font-size: 100%;
+	font-family: 'Open Sans', sans-serif;
+}
+.container{
+	width: 100%;
+	padding-right: 0px;
+	padding-left: 0px;
+	margin-bottom: 50px;
+}
+.main_info{
+	padding: 100px 50px 60px 100px;
+	background-color: #5F81C8;
+	margin-bottom: 80px;
+}
+.main_title{
+	font-size: 60px; 
+	color: #ffffff;
+	font-family: 'Josefin Sans', sans-serif;
+}
+.sub_title{
+	font-size: 24px; 
+	color: #ffffff;
+	font-family: 'Josefin Sans', sans-serif;
+	font-style: oblique;
+}
+.input_form{
+	margin-bottom: 40px;
+}
+.input_form input{
+	color: #999; 
+	padding: 6px; 
+	width: 100%; 
+	border: 1px solid #BBBBBB; 
+	-webkit-border-radius: 2px;
+}
+.submit_button{
+	margin: 20px auto;
+	width: 100px;
+	background-color: #D57B7B;
+	padding: 6px 10px 6px 10px;
+	text-align: center;
+}
+.submit_button a{
+	color: #ffffff;
+	text-decoration: none;
+}
+.show_question{
+	margin-left: 60px;
+	margin-bottom: 60px;
+}
+.classify_chart{
+	width: 100%;
+	margin: 0 auto;
+}
+.classify_chart div{
+	padding: 20px 35px;
+}
+#demo{
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 50px;
+}
+#demo div{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}

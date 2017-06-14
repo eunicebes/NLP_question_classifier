@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- CSS files start -->
+<link href="../static/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../static/css/main.css" rel="stylesheet" type="text/css" media="all" />
+<!-- CSS files end -->
+</head>
+<body>
+    <!-- navigation bar -->
+    <nav class="navbar navbar-default navbar-fixed-top" style="background-color: #F5F5F5;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="http://127.0.0.1:5000"><img src='../static/img/blocks.png' width="40px;" style="margin-top: -10px; margin-right: 10px;"></a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="student" style="font-size: 20px; margin-top: 2pt;"><img src='../static/img/user.png' width="20px;" style="margin-top: -3px; margin-right: 8px;">Student</a></li>
+                <li><a href="search" style="font-size: 20px; margin-top: 2pt;"><img src='../static/img/magnifier-tool.png' width="20px;" style="margin-top: -3px; margin-right: 8px;">Search</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="main_info">
+            <div class="main_title">E-Learning Assistant</div>
+            <div class="sub_title">- Classify your question</div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 input_form">
+                <div style="font-size: 20px; margin-bottom: 8px;">Question</div>
+                <input id="question_text" type="text" value="Type your question" onfocus="cleartext(this)" onblur="resettext(this)"/>
+                <div class="submit_button"><a href="javascript: get_question_text();">Submit</a></div>
+            </div>
+        </div>
+        <div class="classify_chart" style="display: none;">
+            <div class="col-xs-6">
+                <canvas id="naive_bayes"></canvas>
+            </div>
+            <div class="col-xs-6">
+                <canvas id="random_forest"></canvas>
+            </div>
+        </div>
+        <div class="classify_chart" style="display: none;">
+            <div class="col-xs-6">
+                <canvas id="svm"></canvas>
+            </div>
+            <div class="col-xs-6">
+                <canvas id="lr"></canvas>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- JavaScript files start -->
+<!-- jQuery -->
+<script type="text/javascript" src="../static/js/jquery-3.2.1.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../static/js/Chart.js"></script>
+<script type="text/javascript" src="../static/js/send_question.js"></script>
+<!-- JavaScript files end -->
+</html>
