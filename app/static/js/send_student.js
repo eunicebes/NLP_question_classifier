@@ -1,7 +1,7 @@
 function init_student(){
 	$.ajax({
 		type:'GET',
-        url: 'http://127.0.0.1:5000/load_student',
+        url: '/load_student',
         success:function(response){
             // alert(response.length);
         	for (var i = 0; i < response.length; i++){
@@ -26,7 +26,7 @@ function get_student(){
 
     $.ajax({
         type:'POST',
-        url: 'http://127.0.0.1:5000/get_count',
+        url: '/get_count',
         data:JSON.stringify({
             'member_id': member_id
         }),
