@@ -1,7 +1,7 @@
 function init_quesion(){
 	$.ajax({
 		type:'GET',
-        url: 'http://127.0.0.1:5000/load_question',
+        url: '/load_question',
         success:function(response){
         	for (var i = 0; i < response.length; i++){
         		$("#q_id").append($("<option></option>").attr("value", response[i]).text(response[i]));
@@ -26,7 +26,7 @@ function get_question(){
 
 	$.ajax({
 		type:'POST',
-	    url: 'http://127.0.0.1:5000/get_probability',
+	    url: '/get_probability',
 	    data:JSON.stringify({
 	    	'question_id': question_id
 	    }),
