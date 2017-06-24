@@ -23,18 +23,18 @@ To see the application, access the following url
 
 ## Final explanation
 
-feature_extraction.ipynb
+***eature_extraction.ipynb***
 
 Preprocessing code, questions filtering, statistical calculation, etc.
 
-train_classifier.ipynb
+***train_classifier.ipynb***
 
 Implement classifiers.
 
-pkl files
+***pkl files***
 
 Classifiers pkl file.
 
-cnn-text-classification-tf
+***cnn-text-classification-tf***
 
 CNN classifier that implemented by TensorFlow.
