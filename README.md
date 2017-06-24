@@ -20,3 +20,21 @@ Run the application
 To see the application, access the following url
 
 	http://localhost:5000
+
+## Final explanation
+
+feature_extraction.ipynb
+
+Preprocessing code, questions filtering, statistical calculation, etc.
+
+train_classifier.ipynb
+
+Implement classifiers.
+
+pkl files
+
+Classifiers pkl file.
+
+cnn-text-classification-tf
+
+CNN classifier that implemented by TensorFlow.
